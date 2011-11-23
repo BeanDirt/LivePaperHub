@@ -1,22 +1,17 @@
-# you describe your data using the YAML notation here
-# and then load them using Fixtures.load("data.yml")
-
-User(bob):
-  firstName: Bob
-  lastName: Jones
-  email: bob@gmail.com
+User(ted):
+  firstName: Ted
+  lastName: Conn
+  email: citizen@tedconn.com
+  purchasedCollections: [64452654-72157627195160401]
   
-User(foo):
-  firstName: Foo
-  lastName: kablooey
-  email: foo@gmail.com
-
-User(bar):
-  firstName: Bar
-  lastName: Test
-  email: bar@gmail.com
+Collection(San Francisco Skyline):
+  cid: 64452654-72157627195160401
+  trial: true
+  enabled: true
+  price: .99
   
-User(baz):
-  firstName: Baz
-  lastName: Jones
-  email: baz@gmail.com
+Collection(Golden Gate Bridge):
+  cid: 64452654-72157627078307668
+  trial: true
+  enabled: true
+  price: .99

@@ -4,9 +4,21 @@
 
 # Home page
 GET     /                                       Application.index
+
+# Users
+
 GET     /users                                  Users.all
 GET     /users/{id}                             Users.show
 
+# Collections
+POST    /collections							Collections.enabled
+GET		/collections							Collections.enabled
+
+POST	/purchasedCollections/{userEmail}		Collections.purchased
+GET		/purchasedCollections/{userEmail}		Collections.purchased
+
+POST 	/collections/{cid}/purchase/{userEmail} Collections.purchase
+GET 	/collections/{cid}/purchase/{userEmail} Collections.purchase
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
