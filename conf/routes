@@ -9,6 +9,9 @@ GET     /                                       Application.index
 
 GET     /users                                  Users.all
 GET     /users/{id}                             Users.show
+POST	/users/create/							Users.create
+GET		/users/create/							Users.create
+
 
 # Collections
 POST    /collections							Collections.enabled
